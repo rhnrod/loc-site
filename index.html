@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu lateral resposivo</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://kit.fontawesome.com/a232b780ff.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class="fa-solid fa-cross"></i>
+                <div class="logo_name noselect"">Devocionário Anglicano</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Pesquisar..." class="noselect">
+                <span class="tooltip noselect">Pesquisar</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-book-open-reader"></i>
+                    <span class="links_name noselect">Lecionário Anglicano</span>
+                </a>
+                <span class="tooltip noselect">Lecionário Anglicano</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-church"></i>
+                    <span class="links_name noselect"">Anglicanismo</span>
+                </a>
+                <span class="tooltip noselect">Anglicanismo</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-book-bible"></i>
+                    <span class="links_name noselect"">Ofício Diário</span>
+                </a>
+                <span class="tooltip noselect">Ofício Diário</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-hands-praying"></i>
+                    <span class="links_name noselect"">Orações</span>
+                </a>
+                <span class="tooltip noselect">Orações</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <span class="links_name noselect"">Ajustes</span>
+                </a>
+                <span class="tooltip noselect">Ajustes</span>
+            </li>
+        </ul>
+        <div class="social_media noselect">
+            <span id="follow-us">Siga-nos</span>
+            <a id="sm-buttons" href="#">
+                <i id="social-media" class="fa fa-brands fa-github-alt"></i>
+            </a>
+            <a id="sm-buttons" href="#">
+                <i id="social-media" class="fa  fa-brands fa-twitter"></i>
+            </a>
+            <a id="sm-buttons" href="#">
+                <i id="social-media" class="fa  fa-solid fa-paper-plane"></i>
+            </a>
+            <a id="sm-buttons" href="#">
+                <i id="social-media" class="fa  fa-brands fa-amazon"></i>
+            </a>
+            <a id="sm-buttons" href="#">
+                <i id="social-media" class="fa fa-solid fa-newspaper"></i>
+            </a>
+        </div>
+    </div>
+    <div class="home_content">
+        <div class="text">Home Content</div>
+    </div>
+</body>
+<script>
+    let btn =  document.querySelector("#btn");
+    let sidebar =  document.querySelector(".sidebar");
+    let searchBtn =  document.querySelector(".fa-magnifying-glass");
+
+    btn.onclick = function(){
+        sidebar.classList.toggle("active");
+    }
+
+    searchBtn.onclick = function(){
+        sidebar.classList.toggle("active");
+    }
+</script>
+
+</html>
